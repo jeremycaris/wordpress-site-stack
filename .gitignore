@@ -1,0 +1,88 @@
+#---------------------------
+# OS-specific files
+#---------------------------
+.DS_Store
+.Trashes
+Thumbs.db
+
+#---------------------------
+# Composer
+#---------------------------
+/vendor
+.env
+.env.*
+auth.json
+
+#---------------------------
+# Smart Plugin Manager
+#---------------------------
+/.logs/
+autoupdater_maintenance_mode_enabled.tmp
+
+# Exclude WordPress core
+/wordpress/*
+/wordpress/wp-includes/
+/wordpress/wp-admin/
+
+# Include wp-content, then exclude each of the subdirectories
+!/wordpress/wp-content
+/wordpress/wp-content/*
+
+## Themes: include the directory, exclude all subdirectories except those specified
+!/wordpress/wp-content/themes/
+/wordpress/wp-content/themes/*
+!/wordpress/wp-content/themes/sofw-nextlevel-agency
+!/wordpress/wp-content/themes/sofw-nextlevel-yhsgr20
+!/wordpress/wp-content/themes/sofw-nextlevel-yhsgr20s
+
+## Plugins: include the directory, exclude all subdirectories except those specified
+!/wordpress/wp-content/plugins/
+/wordpress/wp-content/plugins/*
+!/wordpress/wp-content/plugins/gf-fub
+!/wordpress/wp-content/plugins/gf-spam-rules
+!/wordpress/wp-content/plugins/gf-combined-form-entries
+!/wordpress/wp-content/plugins/sofw-maverick
+!/wordpress/wp-content/plugins/sofw-new-vendor
+
+## Must-Use Plugins: include the directory, exclude all subdirectories except those specified
+!/wordpress/wp-content/mu-plugins/
+/wordpress/wp-content/mu-plugins/*
+!/wordpress/wp-content/mu-plugins/sofw-plugin-control.php
+
+#---------------------------
+# large/disallowed file types
+# a CDN should be used for these
+#---------------------------
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.log
