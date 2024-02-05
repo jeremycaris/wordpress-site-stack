@@ -35,6 +35,7 @@ mysql -u root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 # if password is set
 # mysql -u root -p
+CREATE DATABASE wp_wordpress;
 ```
 
 Install phpmyadmin
