@@ -28,14 +28,19 @@ valet install
 
 Install mysql
 
+*Creating Database for WordPress - [Reference](https://developer.wordpress.org/advanced-administration/before-install/creating-database/)*
+
 ```bash
 brew install mysql
 brew services start mysql
 mysql -u root
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
-# if password is set
+
+# If password is set:
 # mysql -u root -p
-CREATE DATABASE wp_wordpress;
+
+# Create a DB:
+# CREATE DATABASE wp_wordpress;
 ```
 
 Install phpmyadmin
@@ -46,6 +51,8 @@ cd /usr/local/share/phpmyadmin
 valet link
 valet secure phpmyadmin
 ```
+
+<br>
 
 ## Project setup
 
