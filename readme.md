@@ -1,4 +1,4 @@
-# Wordpress - Local Development Environment
+# Wordpress Site Stack
 
 ## First-time setup
 
