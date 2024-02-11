@@ -1,6 +1,6 @@
 # Wordpress Site Stack
 
-## First-time setup
+## LEMP stack + mailhog
 
 Install homebrew
 
@@ -51,6 +51,35 @@ valet link
 valet secure phpmyadmin
 ```
 
+*Access at https://phpmyadmin.test/, Username: root | Password: password*
+
+Install mailhog
+
+```bash
+brew update && brew install mailhog
+
+# Run as a background service launched automatically at login 
+brew services start mailhog
+
+# Edit the Postfix config file
+sudo nano /etc/postfix/main.cf
+
+# Add to the end of the file
+# For MailHog
+myhostname = localhost
+relayhost = [localhost]:1025
+
+# Restart postfix
+sudo postfix stop && sudo postfix start
+
+# Send a test message, then check mailhog
+date | mail -s "Test Email" your_email@gmail.com
+```
+
+*Access mailhog at http://localhost:8025/ (Default: http://0.0.0.0:8025/)*
+
+
+
 <br>
 
 ## Project setup
@@ -60,6 +89,8 @@ composer install
 valet park
 valet secure wordpress
 ```
+
+*Access at https://wordpress.test/, Username: admin | Password: admin*
 
 Optional
 
