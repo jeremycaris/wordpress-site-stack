@@ -1,6 +1,6 @@
 # Wordpress Site Stack
 
-## LEMP stack + mailhog
+## MacOS LEMP stack + mailhog
 
 Install homebrew
 
@@ -61,7 +61,7 @@ brew update && brew install mailhog
 # Run as a background service launched automatically at login 
 brew services start mailhog
 
-# Edit the Postfix config file
+# Edit the postfix config file
 sudo nano /etc/postfix/main.cf
 
 # Add to the end of the file
@@ -92,7 +92,7 @@ valet secure wordpress
 
 *Access at https://wordpress.test/, Username: admin | Password: admin*
 
-Optional
+Optional wp-config.php setting
 
 ```php
 /** BE Media from Production */
