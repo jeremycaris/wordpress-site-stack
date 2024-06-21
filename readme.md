@@ -98,3 +98,17 @@ Optional wp-config.php setting
 /** BE Media from Production */
 define( 'BE_MEDIA_FROM_PRODUCTION_URL', 'https://sourcesite.com' );
 ```
+
+
+
+<br>
+
+## Run It
+
+```bash
+valet start
+```
+
+```bash
+valet stop
+```
